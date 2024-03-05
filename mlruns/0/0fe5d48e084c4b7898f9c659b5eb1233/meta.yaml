@@ -1,0 +1,15 @@
+artifact_uri: file:///home/csc/Documents/GitHub/email_CTR_Prediction/mlruns/0/0fe5d48e084c4b7898f9c659b5eb1233/artifacts
+end_time: 1709653995292
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0fe5d48e084c4b7898f9c659b5eb1233
+run_name: clumsy-swan-677
+run_uuid: 0fe5d48e084c4b7898f9c659b5eb1233
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709653934480
+status: 3
+tags: []
+user_id: csc

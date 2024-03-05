@@ -1,0 +1,15 @@
+artifact_uri: file:///home/csc/Documents/GitHub/email_CTR_Prediction/mlruns/0/f5b432b785394263aeedb879a22b2d49/artifacts
+end_time: 1709653753795
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f5b432b785394263aeedb879a22b2d49
+run_name: placid-roo-308
+run_uuid: f5b432b785394263aeedb879a22b2d49
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709653722226
+status: 4
+tags: []
+user_id: csc

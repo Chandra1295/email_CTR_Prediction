@@ -1,0 +1,15 @@
+artifact_uri: file:///home/csc/Documents/GitHub/email_CTR_Prediction/mlruns/0/dc3604308fa44aa786b3ca0b8097b5d1/artifacts
+end_time: 1709650026862
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dc3604308fa44aa786b3ca0b8097b5d1
+run_name: honorable-gnu-269
+run_uuid: dc3604308fa44aa786b3ca0b8097b5d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709649937076
+status: 3
+tags: []
+user_id: csc
