@@ -1,0 +1,15 @@
+artifact_uri: file:///home/csc/Documents/GitHub/email_CTR_Prediction/mlruns/0/4ee5b09d7d664e44a792859f3e04e392/artifacts
+end_time: 1709705519050
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4ee5b09d7d664e44a792859f3e04e392
+run_name: kindly-shad-622
+run_uuid: 4ee5b09d7d664e44a792859f3e04e392
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709705411360
+status: 4
+tags: []
+user_id: csc

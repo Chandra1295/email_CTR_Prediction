@@ -1,0 +1,15 @@
+artifact_uri: file:///home/csc/Documents/GitHub/email_CTR_Prediction/mlruns/0/4221dac6f6f544bd93cd179b7c3722b8/artifacts
+end_time: 1709705852888
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4221dac6f6f544bd93cd179b7c3722b8
+run_name: salty-wolf-421
+run_uuid: 4221dac6f6f544bd93cd179b7c3722b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709705769513
+status: 4
+tags: []
+user_id: csc

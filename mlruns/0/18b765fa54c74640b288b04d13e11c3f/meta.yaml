@@ -1,0 +1,15 @@
+artifact_uri: file:///home/csc/Documents/GitHub/email_CTR_Prediction/mlruns/0/18b765fa54c74640b288b04d13e11c3f/artifacts
+end_time: 1709707321946
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 18b765fa54c74640b288b04d13e11c3f
+run_name: abundant-pug-425
+run_uuid: 18b765fa54c74640b288b04d13e11c3f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709707143574
+status: 3
+tags: []
+user_id: csc

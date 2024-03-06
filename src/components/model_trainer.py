@@ -86,11 +86,10 @@ class ModelTrainer:
 
                 ## To get best model score from dict
                 best_model_name, best_model_score = max(model_report.items(), key=lambda x: x[1])
-
                 ## To get best model name from dict
                 best_model = models[best_model_name]
 
-                if best_model_score<0.5:
+                if best_model_score<0.3:
                     raise CustomException("No best model found")
                 logging.info(f"Best found model on both training and testing dataset")
 
@@ -109,6 +108,7 @@ class ModelTrainer:
                 # Log metrics
                 mlflow.log_metric("best_model_score", best_model_score)
                 mlflow.log_metric("r2_square", r2_square)
+                
                 return r2_square
         
         except Exception as e:

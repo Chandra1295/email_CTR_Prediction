@@ -1,0 +1,15 @@
+artifact_uri: file:///home/csc/Documents/GitHub/email_CTR_Prediction/mlruns/0/8b9a455c849c4f42b48d69fafdd0025c/artifacts
+end_time: 1709705765874
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8b9a455c849c4f42b48d69fafdd0025c
+run_name: dapper-crane-816
+run_uuid: 8b9a455c849c4f42b48d69fafdd0025c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709705739186
+status: 4
+tags: []
+user_id: csc

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/csc/Documents/GitHub/email_CTR_Prediction/mlruns/0/d8b70a8fc0f54c70a34f1856a4485ab1/artifacts
+end_time: 1709706574559
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d8b70a8fc0f54c70a34f1856a4485ab1
+run_name: able-robin-542
+run_uuid: d8b70a8fc0f54c70a34f1856a4485ab1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709706503922
+status: 4
+tags: []
+user_id: csc
