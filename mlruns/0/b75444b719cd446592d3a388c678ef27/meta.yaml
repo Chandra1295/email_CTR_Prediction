@@ -1,0 +1,15 @@
+artifact_uri: file:///home/csc/Documents/GitHub/email_CTR_Prediction/mlruns/0/b75444b719cd446592d3a388c678ef27/artifacts
+end_time: 1709704263943
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b75444b719cd446592d3a388c678ef27
+run_name: trusting-vole-175
+run_uuid: b75444b719cd446592d3a388c678ef27
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709704247187
+status: 4
+tags: []
+user_id: csc

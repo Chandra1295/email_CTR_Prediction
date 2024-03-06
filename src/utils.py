@@ -25,9 +25,9 @@ def evaluate_models(X_train, y_train,X_test,y_test,models,param):
         report = {}
 
         for model_name, model in models.items():
-            param = param[model_name]
+            model_param = param[model_name]
 
-            gs = RandomizedSearchCV(model, param_distributions=param, n_iter=5, n_jobs=-1, cv=5, scoring='r2')
+            gs = RandomizedSearchCV(model, param_distributions=model_param, n_iter=5, n_jobs=-1, cv=5, scoring='r2')
             gs.fit(X_train, y_train)
 
             model.set_params(**gs.best_params_)

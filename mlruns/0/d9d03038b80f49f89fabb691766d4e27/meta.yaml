@@ -1,0 +1,15 @@
+artifact_uri: file:///home/csc/Documents/GitHub/email_CTR_Prediction/mlruns/0/d9d03038b80f49f89fabb691766d4e27/artifacts
+end_time: 1709704394989
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d9d03038b80f49f89fabb691766d4e27
+run_name: resilient-fly-171
+run_uuid: d9d03038b80f49f89fabb691766d4e27
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709704298707
+status: 3
+tags: []
+user_id: csc

@@ -11,7 +11,6 @@ from sklearn.ensemble import (
 )
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
-from sklearn.neighbors import KNeighborsRegressor
 from sklearn.tree import DecisionTreeRegressor
 from xgboost import XGBRegressor
 
@@ -40,13 +39,12 @@ class ModelTrainer:
                 )
                 models = {
                         "Random Forest": RandomForestRegressor(),
-                        #,
-                        # "Decision Tree": DecisionTreeRegressor(),
-                        # "Gradient Boosting": GradientBoostingRegressor(),
+                        "Decision Tree": DecisionTreeRegressor(),
+                        "Gradient Boosting": GradientBoostingRegressor(),
                         "Linear Regression": LinearRegression(),
-                        # "XGBRegressor": XGBRegressor(),
-                        # "CatBoosting Regressor": CatBoostRegressor(verbose=False),
-                        # "AdaBoost Regressor": AdaBoostRegressor(),
+                        "XGBRegressor": XGBRegressor(),
+                        "CatBoosting Regressor": CatBoostRegressor(verbose=False),
+                        "AdaBoost Regressor": AdaBoostRegressor(),
                     }
                 params={
                     "Random Forest":{
@@ -55,35 +53,30 @@ class ModelTrainer:
                         'oob_score':[True],
                         'random_state':[101]
                     },
-                    #,
-                    # "Decision Tree": {
-                    #     'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
-                    #     # 'splitter':['best','random'],
-                    #     # 'max_features':['sqrt','log2'],
-                    # },
-                    # "Gradient Boosting":{
-                    #     # 'loss':['squared_error', 'huber', 'absolute_error', 'quantile'],
-                    #     'learning_rate':[.1,.01,.05,.001],
-                    #     'subsample':[0.6,0.7,0.75,0.8,0.85,0.9],
-                    #     # 'criterion':['squared_error', 'friedman_mse'],
-                    #     # 'max_features':['auto','sqrt','log2'],
-                    #     'n_estimators': [8,16,32,64,128,256]
-                    # },
+                    "Decision Tree": {
+                        'criterion':['squared_error', 'friedman_mse', 'absolute_error', 'poisson'],
+                        # 'splitter':['best','random'],
+                        # 'max_features':['sqrt','log2'],
+                    },
+                    "Gradient Boosting":{
+                        'learning_rate':[.1,.01,.05,.001],
+                        'subsample':[0.6,0.7,0.75,0.8,0.85,0.9],
+                        'n_estimators': [8,16,32,64,128,256]
+                    },
                     "Linear Regression":{},
-                    # "XGBRegressor":{
-                    #     'learning_rate':[.1,.01,.05,.001],
-                    #     'n_estimators': [8,16,32,64,128,256]
-                    # },
-                    # "CatBoosting Regressor":{
-                    #     'depth': [6,8,10],
-                    #     'learning_rate': [0.01, 0.05, 0.1],
-                    #     'iterations': [30, 50, 100]
-                    # },
-                    # "AdaBoost Regressor":{
-                    #     'learning_rate':[.1,.01,0.5,.001],
-                    #     # 'loss':['linear','square','exponential'],
-                    #     'n_estimators': [8,16,32,64,128,256]
-                    # }
+                    "XGBRegressor":{
+                        'learning_rate':[.1,.01,.05,.001],
+                        'n_estimators': [8,16,32,64,128,256]
+                    },
+                    "CatBoosting Regressor":{
+                        'depth': [6,8,10],
+                        'learning_rate': [0.01, 0.05, 0.1],
+                        'iterations': [30, 50, 100]
+                    },
+                    "AdaBoost Regressor":{
+                        'learning_rate':[.1,.01,0.5,.001],
+                        'n_estimators': [8,16,32,64,128,256]
+                    }
                     
                 }
                 
@@ -92,18 +85,12 @@ class ModelTrainer:
                 logging.info("Evaluation is done")
 
                 ## To get best model score from dict
-                best_model_score = max(sorted(model_report.values()))
+                best_model_name, best_model_score = max(model_report.items(), key=lambda x: x[1])
 
                 ## To get best model name from dict
-
-                best_model_name = list(model_report.keys())[
-                    list(model_report.values()).index(best_model_score)
-                ]
                 best_model = models[best_model_name]
 
-                print(best_model)
-
-                if best_model_score<0.10:
+                if best_model_score<0.5:
                     raise CustomException("No best model found")
                 logging.info(f"Best found model on both training and testing dataset")
 
@@ -117,7 +104,7 @@ class ModelTrainer:
                 r2_square = r2_score(y_test, predicted)
 
                 mlflow.log_param("model_type", best_model_name)
-                mlflow.log_params(params[best_model_name])
+                mlflow.log_params(models[best_model_name])
 
                 # Log metrics
                 mlflow.log_metric("best_model_score", best_model_score)

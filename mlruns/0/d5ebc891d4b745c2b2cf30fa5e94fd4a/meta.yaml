@@ -1,0 +1,15 @@
+artifact_uri: file:///home/csc/Documents/GitHub/email_CTR_Prediction/mlruns/0/d5ebc891d4b745c2b2cf30fa5e94fd4a/artifacts
+end_time: 1709700871306
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d5ebc891d4b745c2b2cf30fa5e94fd4a
+run_name: casual-colt-489
+run_uuid: d5ebc891d4b745c2b2cf30fa5e94fd4a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709700784845
+status: 4
+tags: []
+user_id: csc

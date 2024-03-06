@@ -1,0 +1,15 @@
+artifact_uri: file:///home/csc/Documents/GitHub/email_CTR_Prediction/mlruns/0/34b5a0a1383346258e69e5406b9a4e48/artifacts
+end_time: 1709701273342
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 34b5a0a1383346258e69e5406b9a4e48
+run_name: nervous-asp-929
+run_uuid: 34b5a0a1383346258e69e5406b9a4e48
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709701214767
+status: 4
+tags: []
+user_id: csc

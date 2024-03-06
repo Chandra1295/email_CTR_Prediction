@@ -1,0 +1,15 @@
+artifact_uri: file:///home/csc/Documents/GitHub/email_CTR_Prediction/mlruns/0/fb213b2678b54482990dd5cf77076f93/artifacts
+end_time: 1709704294833
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fb213b2678b54482990dd5cf77076f93
+run_name: resilient-colt-948
+run_uuid: fb213b2678b54482990dd5cf77076f93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709704278089
+status: 4
+tags: []
+user_id: csc
