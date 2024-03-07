@@ -45,34 +45,6 @@ def predict_datapoint():
             # Modify this accordingly based on your data processing logic
             pred_df = read_data_from_csv(file)
 
-            # Create a CustomData instance using the first row of the DataFrame
-            # data = CustomData(
-            #     campaign_id=pred_df['campaign_id'].iloc[0],
-            #     sender=pred_df['sender'].iloc[0],
-            #     subject_len=pred_df['subject_len'].iloc[0],
-            #     body_len=pred_df['body_len'].iloc[0],
-            #     mean_paragraph_len=pred_df['mean_paragraph_len'].iloc[0],
-            #     day_of_week=pred_df['day_of_week'].iloc[0],
-            #     is_weekend=pred_df['is_weekend'].iloc[0],
-            #     times_of_day=pred_df['times_of_day'].iloc[0],
-            #     category=pred_df['category'].iloc[0],
-            #     product=pred_df['product'].iloc[0],
-            #     no_of_CTA=pred_df['no_of_CTA'].iloc[0],
-            #     mean_CTA_len=pred_df['mean_CTA_len'].iloc[0],
-            #     is_image=pred_df['is_image'].iloc[0],
-            #     is_personalised=pred_df['is_personalised'].iloc[0],
-            #     is_quote=pred_df['is_quote'].iloc[0],
-            #     is_timer=pred_df['is_timer'].iloc[0],
-            #     is_emoticons=pred_df['is_emoticons'].iloc[0],
-            #     is_discount=pred_df['is_discount'].iloc[0],
-            #     is_price=pred_df['is_price'].iloc[0],
-            #     is_urgency=pred_df['is_urgency'].iloc[0],
-            #     target_audience=pred_df['target_audience'].iloc[0]
-            # )
-
-            # pred_df = data.get_data_as_data_frame()
-            # print(pred_df)
-
             print("Before Prediction")
 
             predict_pipeline = PredictPipeline()
